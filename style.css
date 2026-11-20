@@ -292,7 +292,6 @@ body.is-arriving .count {
 @media (max-width: 768px) {
   :root {
     --nav-size: 13px;
-    --toolbar-gap: 96px;
   }
 
   html {
@@ -402,11 +401,10 @@ body.is-arriving .count {
     display: block;
     flex: none;
     width: 100%;
-    height: calc(50vh - 86px);
-    height: calc(50lvh - 86px);
-    margin-bottom: var(--toolbar-gap);
+    height: 50vh;
+    height: 50lvh;
+    margin: 0;
     object-fit: cover;
-    border-radius: 0;
   }
 
   .mobile-open .fallback {
