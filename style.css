@@ -98,15 +98,11 @@ body {
   margin: 0;
   font-size: var(--nav-size);
   font-weight: 700;
-  letter-spacing: var(--nav-tracking);
+  letter-spacing: var(--ls-small);
   line-height: 1.15;
   text-align: center;
   text-transform: lowercase;
   transition: opacity 350ms ease;
-}
-
-.labels {
-  letter-spacing: var(--ls-small);
 }
 
 .stage {
