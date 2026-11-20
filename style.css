@@ -290,19 +290,18 @@ body.is-arriving .count {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --nav-size: 13px;
+    --edge-gap: 16px;
+  }
+
   html {
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
     overflow-x: clip;
   }
 
-  :root {
-    --nav-size: 13px;
-  }
-
   .site-header {
-    z-index: 30;
-    background: #f0f0ee;
+    background: var(--bg);
   }
 
   .nav {
@@ -322,11 +321,12 @@ body.is-arriving .count {
   }
 
   .mobile-project {
-    height: 88vh;
-    height: 88svh;
+    height: 100vh;
+    height: 100svh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     overflow: hidden;
+    contain: layout paint;
   }
 
   .mobile-open {
@@ -340,11 +340,10 @@ body.is-arriving .count {
 
   .mobile-top {
     display: flex;
-    flex: none;
+    flex: 1 1 auto;
     flex-direction: column;
     justify-content: flex-end;
-    height: 44vh;
-    height: 44svh;
+    min-height: 0;
     padding: 0 0 16px;
     background: #f0f0ee;
   }
@@ -401,9 +400,11 @@ body.is-arriving .count {
   .mobile-cover,
   .mobile-open .fallback {
     display: block;
+    flex: none;
     width: 100%;
-    height: 44vh;
-    height: 44svh;
+    height: calc(50vh - var(--edge-gap));
+    height: calc(50svh - var(--edge-gap));
+    margin-bottom: var(--edge-gap);
     object-fit: cover;
     border-radius: 0;
   }
