@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="contact-layer.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="nav-tab" href="about.html" aria-current="page">About</a>
+      <a class="nav-tab" href="index.html">Portfolio</a>
+      <button type="button" class="nav-tab contact-toggle" aria-expanded="false" aria-controls="contact-layer"><span class="contact-word">Contact</span></button>
+    </nav>
+  </header>
+
+  <main class="about-main">
+    <h1 class="about-name">Chrissy<br>Kuang</h1>
+    <div class="about-sections">
+      <section class="about-section" data-batch="0">
+        <header class="about-head">
+          <p class="about-num">01</p>
+          <h2 class="about-title">about</h2>
+        </header>
+        <div class="about-body about-prose">
+          <p>Specialising in content strategy and campaign production for luxury and beauty brands</p>
+          <p>She bridges the gap between brand strategy and visual execution, translating positioning into campaigns that are coherent from concept through to asset strategy, across digital and offline channels</p>
+          <p>She works from a clear aesthetic point of view, shaped by years of studying luxury codes, consumer positioning, and image direction</p>
+        </div>
+      </section>
+      <section class="about-section" data-batch="1">
+        <header class="about-head">
+          <p class="about-num">02</p>
+          <h2 class="about-title">capabilities</h2>
+        </header>
+        <div class="about-body about-list" id="capabilities"></div>
+      </section>
+      <section class="about-section" data-batch="2">
+        <header class="about-head">
+          <p class="about-num">03</p>
+          <h2 class="about-title">education</h2>
+        </header>
+        <div class="about-body about-lines">
+          <p>HEC Paris</p>
+          <p>Master in Marketing</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <aside class="about-stage" id="about-stage" aria-hidden="true"></aside>
+
+  <script src="projects.js"></script>
+  <script src="about.js"></script>
+  <script src="contact-layer.js"></script>
+</body>
+</html>

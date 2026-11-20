@@ -1,0 +1,22 @@
+I'm a marketer with no coding experience, building a portfolio website
+for a content strategist job application. Use plain HTML, CSS and
+JavaScript only (index.html, style.css, script.js), no frameworks.
+Explain what you're doing in simple words.
+
+Reference: the attached screenshot and recording show a project-name list
+in the middle of the page; hovering a name shows a short italic serif
+tagline on the left and overlapping floating images on the right.
+
+Step 1 only: build the static layout.
+- Top nav with three tabs: About, Portfolio, Contact. Portfolio is the
+  default home page.
+- Cream background (#F6EFDF), black text.
+- Centered column of project names in bold uppercase sans (Google Font
+  "Archivo", tight line spacing), each row separated by a thin line.
+- Left side: an empty space for a tagline in italic serif (Google Font
+  "Fraunces", bold italic).
+- Right side: an empty space for images.
+- Use these placeholder projects: RedNote Paris Photography, HAY Taiwan,
+  Haley Kim, HERA Walking Tours, ANAM, Biotherm Homme, Dior Mirage,
+  Cartier Way Home, DoDo Jewels.
+Do not add hover effects or scrolling yet. Then commit to git.
