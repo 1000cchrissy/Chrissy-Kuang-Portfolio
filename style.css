@@ -292,7 +292,7 @@ body.is-arriving .count {
 @media (max-width: 768px) {
   :root {
     --nav-size: 13px;
-    --edge-gap: 16px;
+    --toolbar-gap: 96px;
   }
 
   html {
@@ -322,7 +322,7 @@ body.is-arriving .count {
 
   .mobile-project {
     height: 100vh;
-    height: 100svh;
+    height: 100lvh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     overflow: hidden;
@@ -402,9 +402,9 @@ body.is-arriving .count {
     display: block;
     flex: none;
     width: 100%;
-    height: calc(50vh - var(--edge-gap));
-    height: calc(50svh - var(--edge-gap));
-    margin-bottom: var(--edge-gap);
+    height: calc(50vh - 86px);
+    height: calc(50lvh - 86px);
+    margin-bottom: var(--toolbar-gap);
     object-fit: cover;
     border-radius: 0;
   }
