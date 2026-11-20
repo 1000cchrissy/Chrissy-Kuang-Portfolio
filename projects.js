@@ -291,7 +291,7 @@ window.PROJECTS = [
   {
     slug: "dior-mirage",
     name: "Dior Mirage",
-    labels: ["Creative Strategy", "Campaign Development"],
+    labels: ["Creative Direction", "Campaign Development"],
     images: [
       "main.jpg",
       { slideshow: ["1.jpg", "2.jpg"] },
@@ -343,7 +343,7 @@ window.PROJECTS = [
   {
     slug: "cartier-way-home",
     name: "Cartier Way Home",
-    labels: ["Creative Strategy", "Campaign Development"],
+    labels: ["Creative Direction", "Campaign Development"],
     images: [
       "main.jpg",
       { slideshow: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"] },
@@ -394,7 +394,7 @@ window.PROJECTS = [
   {
     slug: "dodo-jewels",
     name: "DoDO Jewels",
-    labels: ["Creative Strategy", "Campaign Development"],
+    labels: ["Creative Direction", "Campaign Development"],
     images: [
       "main.jpg",
       { slideshow: ["1.jpg", "2.jpg"] },
@@ -446,7 +446,7 @@ window.PROJECTS = [
   {
     slug: "novo-nordisk",
     name: "Novo Nordisk",
-    labels: ["Creative Strategy", "Campaign Development"],
+    labels: ["Creative Direction", "Campaign Development"],
     images: [
       { pairs: ["main.jpg", "1.png"] },
       { slideshow: ["2.jpg", "3.jpg"] },

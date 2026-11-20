@@ -229,7 +229,7 @@
 .index-table tbody tr.is-current td,
 .index-table tbody tr:hover a,
 .index-table tbody tr.is-current a {
-  color: #5170ff;
+  color: var(--hover-blue);
 }
 
 .index-bar {

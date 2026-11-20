@@ -215,7 +215,7 @@ body {
 
   .beat-prev:hover,
   .beat-next:hover {
-    color: #5170ff;
+    color: var(--hover-blue);
   }
 
   .beat-prev.is-dim,
@@ -350,7 +350,7 @@ body {
 
 .index-open:hover,
 .back:hover {
-  color: #5170ff;
+  color: var(--hover-blue);
 }
 
 .case-meta,
@@ -835,11 +835,11 @@ body.is-entering .block:nth-child(3) {
   animation-delay: 510ms;
 }
 
-body.is-entering .index-open {
+body.is-entering .back {
   animation-delay: 590ms;
 }
 
-body.is-entering .back {
+body.is-entering .index-open {
   animation-delay: 670ms;
 }
 

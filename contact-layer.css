@@ -67,7 +67,7 @@ button.contact-toggle {
 
 .contact-lines a:hover,
 .contact-lines a:focus-visible {
-  color: #5170ff;
+  color: var(--hover-blue);
 }
 
 .contact-lines.is-open {

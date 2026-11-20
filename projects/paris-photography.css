@@ -276,7 +276,7 @@ h1 {
 }
 
 .next-link:hover {
-  color: #5170ff;
+  color: var(--hover-blue);
 }
 
 @media (max-width: 768px) {

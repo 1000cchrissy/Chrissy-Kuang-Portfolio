@@ -336,13 +336,31 @@ function renderMobile() {
     photo.src = fileUrl(project, window.projectCover(project));
     watch(photo, "fallback");
 
+    const hint = document.createElement("span");
+    hint.className = "mobile-open-hint";
+    hint.textContent = "(open>)";
+    hint.setAttribute("aria-hidden", "true");
+
     row.append(name, number);
     meta.append(row, labels);
     top.append(meta);
-    link.append(top, photo);
+    link.append(top, photo, hint);
     section.appendChild(link);
     snap.appendChild(section);
   });
+  watchMobileHints();
+}
+
+let mobileHintObserver = null;
+function watchMobileHints() {
+  if (mobileHintObserver) mobileHintObserver.disconnect();
+  const sections = snap.querySelectorAll(".mobile-project");
+  mobileHintObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("is-active", entry.isIntersecting);
+    });
+  }, { threshold: 0.6 });
+  sections.forEach((section) => mobileHintObserver.observe(section));
 }
 
 function renderList() {
@@ -474,6 +492,10 @@ function render() {
     const section = snap.children[savedProjectIndex()];
     if (section) window.scrollTo({ top: section.offsetTop, behavior: "auto" });
     return;
+  }
+  if (mobileHintObserver) {
+    mobileHintObserver.disconnect();
+    mobileHintObserver = null;
   }
   renderSlides(start);
   projects.forEach((project) => {

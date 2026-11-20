@@ -372,7 +372,7 @@ if (title && title.parentNode) {
     const link = document.createElement("a");
     link.className = "page-back";
     link.href = "../index.html";
-    link.textContent = "BACK \u21A9";
+    link.textContent = "BACK";
     link.setAttribute("aria-label", "Back to portfolio");
     head.appendChild(link);
   }

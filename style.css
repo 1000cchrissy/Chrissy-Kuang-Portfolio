@@ -329,6 +329,7 @@ body.is-arriving .count {
   }
 
   .mobile-open {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -383,7 +384,7 @@ body.is-arriving .count {
     font-weight: 700;
     letter-spacing: var(--ls-small);
     line-height: 1.15;
-    text-transform: none;
+    text-transform: lowercase;
     transition: opacity 350ms ease;
   }
 
@@ -401,10 +402,32 @@ body.is-arriving .count {
     display: block;
     flex: none;
     width: 100%;
-    height: 50vh;
-    height: 50lvh;
+    height: 62.5vh;
+    height: 62.5lvh;
     margin: 0;
     object-fit: cover;
+  }
+
+  .mobile-open-hint {
+    position: absolute;
+    top: calc(100% - 62.5vh + 14px);
+    top: calc(100% - 62.5lvh + 14px);
+    right: 14px;
+    margin: 0;
+    color: var(--bg);
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: var(--ls-small);
+    line-height: 1;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .mobile-project.is-active .mobile-open-hint {
+    opacity: 1;
+    transition: opacity 400ms ease 300ms;
   }
 
   .mobile-open .fallback {
@@ -435,8 +458,14 @@ html.is-fade-out {
   .labels,
   .stage,
   .stage > img,
-  .open-cursor {
+  .open-cursor,
+  .mobile-open-hint,
+  .mobile-project.is-active .mobile-open-hint {
     transition: none;
+  }
+
+  .mobile-open-hint {
+    opacity: 1;
   }
 
   body.is-arriving .slide.is-active .stage,

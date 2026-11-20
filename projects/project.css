@@ -170,7 +170,7 @@ body {
 }
 
 .next-project:hover {
-  color: var(--hover-text);
+  color: var(--hover-blue);
 }
 
 .next-project:hover::before {

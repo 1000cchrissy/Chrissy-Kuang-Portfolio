@@ -1,7 +1,22 @@
 :root {
   --hover-text: #e9ffa0;
+  --hover-blue: #5170ff;
   --nav-size: clamp(13px, 1.04vw, 24px);
   --nav-tracking: -0.09em;
   --ls-small: -0.03em;
   --project-size: 25pt;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a,
+  button {
+    transition: color 150ms ease;
+  }
+
+  a:hover,
+  button:hover,
+  a:hover *,
+  button:hover * {
+    color: var(--hover-blue) !important;
+  }
 }
