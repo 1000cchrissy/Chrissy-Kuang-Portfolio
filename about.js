@@ -1,7 +1,7 @@
 const BATCHES = [
-  { images: ["1.jpg", "2.png", "3.png"], heights: [14.4, 14.4, 10.2] },
-  { images: ["4.png", "5.jpg", "6.jpg"], heights: [12.8, 14.2, 11.6] },
-  { images: ["7.png", "8.jpg", "9.JPG"], heights: [11, 15.3, 12.8] }
+  { images: ["1.jpg", "2.png", "3.png"], heights: [20.25, 20.25, 20.25] },
+  { images: ["4.png", "5.jpg", "6.jpg"], heights: [20.25, 20.25, 20.25] },
+  { images: ["7.png", "8.jpg", "9.JPG"], heights: [20.25, 20.25, 20.25] }
 ];
 
 const EXTENSIONS = ["jpg", "jpeg", "png", "webp", "JPG", "JPEG", "PNG", "WEBP"];

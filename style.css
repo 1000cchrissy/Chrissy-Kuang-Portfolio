@@ -292,11 +292,17 @@ body.is-arriving .count {
 @media (max-width: 768px) {
   html {
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
     overflow-x: clip;
   }
 
   :root {
     --nav-size: 13px;
+  }
+
+  .site-header {
+    z-index: 30;
+    background: #f0f0ee;
   }
 
   .nav {
@@ -316,7 +322,8 @@ body.is-arriving .count {
   }
 
   .mobile-project {
-    height: 100dvh;
+    height: 88vh;
+    height: 88svh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     overflow: hidden;
@@ -336,7 +343,8 @@ body.is-arriving .count {
     flex: none;
     flex-direction: column;
     justify-content: flex-end;
-    height: 50dvh;
+    height: 44vh;
+    height: 44svh;
     padding: 0 0 16px;
     background: #f0f0ee;
   }
@@ -381,11 +389,21 @@ body.is-arriving .count {
     transition: opacity 350ms ease;
   }
 
+  .stage,
+  body.is-leaving .slide.is-active .stage {
+    transform: none;
+  }
+
+  .stage > img {
+    will-change: auto;
+  }
+
   .mobile-cover,
   .mobile-open .fallback {
     display: block;
     width: 100%;
-    height: 50dvh;
+    height: 44vh;
+    height: 44svh;
     object-fit: cover;
     border-radius: 0;
   }

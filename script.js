@@ -332,7 +332,7 @@ function renderMobile() {
     photo.className = "mobile-cover";
     photo.alt = "";
     photo.decoding = "async";
-    if (index > 0) photo.loading = "lazy";
+    photo.loading = index === 0 ? "eager" : "lazy";
     photo.src = fileUrl(project, window.projectCover(project));
     watch(photo, "fallback");
 
@@ -437,7 +437,7 @@ function nearest() {
 
 let ticking = false;
 function requestNearest() {
-  if (!slides.length || ticking) return;
+  if (mobileQuery.matches || !slides.length || ticking) return;
   ticking = true;
   requestAnimationFrame(() => {
     nearest();
