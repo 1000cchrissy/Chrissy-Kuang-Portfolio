@@ -289,7 +289,7 @@ body {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    height: 100dvh;
+    height: 100svh;
     padding-top: var(--top-h, 0px);
     padding-bottom: var(--bar-h, 0px);
     scroll-snap-align: center;

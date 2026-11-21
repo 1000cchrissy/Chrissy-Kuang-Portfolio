@@ -58,9 +58,9 @@ async function findSrc(file) {
 }
 
 const MOBILE_RATIOS = [
-  [1.31, 1.31, 0.93],
-  [1.16, 1.29, 1.05],
-  [1, 1.39, 1.16]
+  [1.5, 1.5, 1.5],
+  [1.5, 1.5, 1.5],
+  [1.5, 1.5, 1.5]
 ];
 
 function measureChrome() {
@@ -312,7 +312,10 @@ Promise.all(slots.map((slot, slotIndex) => Promise.all(BATCHES.map(async (batch,
   }
 });
 
+let lastWidth = window.innerWidth;
 function onResize() {
+  if (mobileQuery.matches && window.innerWidth === lastWidth) return;
+  lastWidth = window.innerWidth;
   applyHeights();
 }
 
