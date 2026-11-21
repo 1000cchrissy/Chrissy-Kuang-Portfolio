@@ -83,7 +83,7 @@
 
   const toggleLabel = document.createElement("span");
   toggleLabel.className = "index-toggle-label";
-  toggleLabel.textContent = "Projects Index";
+  toggleLabel.textContent = "Project Index";
 
   toggle.append(icon, toggleLabel);
 

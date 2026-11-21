@@ -1,4 +1,4 @@
-const LINKEDIN_URL = "#";
+const LINKEDIN_URL = "https://www.linkedin.com/in/chrissy-kuang/";
 
 const contactButton = document.querySelector(".contact-toggle");
 
@@ -30,7 +30,7 @@ if (contactButton) {
   const phone = addLink("+33 7 59 52 00 15", "tel:+33759520015");
   const email = addLink(EMAIL_LABEL, "#email");
   const instagram = addLink("Instagram: @croireenmoi", "https://www.instagram.com/croireenmoi/", "contact-gap");
-  const linkedin = addLink("Linkedin: Chrissy Kuang", LINKEDIN_URL);
+  const linkedin = addLink("LinkedIn: Chrissy Kuang", LINKEDIN_URL);
   const cv = addLink("Download my CV", assetRoot + "assets/chrissy-kuang-cv.pdf", "contact-gap");
   cv.setAttribute("download", "chrissy-kuang-cv.pdf");
   [instagram].forEach((link) => {

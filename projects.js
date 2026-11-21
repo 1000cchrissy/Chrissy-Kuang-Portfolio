@@ -7,17 +7,17 @@ window.PROJECTS = [
     cover: "assets/projects/paris-photography/in-the-blue-montmartre/main.jpg",
     images: [
       "in-the-blue-montmartre/main.jpg",
-      "8pm-place-des-vosges/main.jpg",
-      "amelie-montmartre/main.jpg",
+      "8pm-place-des-vosges/main.JPG",
+      "amelie-montmartre/main.JPG",
       "bw-le-marais/main.jpg",
       "gaze-le-marais/main.jpg",
     ],
     shoots: [
-      { slug: "in-the-blue-montmartre", title: "In the Blue", location: "Montmartre", images: ["1.jpg", "2.jpg", "3.jpg", "4.jpg"] },
-      { slug: "8pm-place-des-vosges", title: "8PM", location: "Place des Vosges", images: ["1.jpg", "2.jpg", "3.jpg"] },
-      { slug: "amelie-montmartre", title: "Amélie", location: "Montmartre", images: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"] },
+      { slug: "in-the-blue-montmartre", title: "In the Blue", location: "Montmartre", images: ["1.jpg", "2.JPG", "3.JPG", "4.JPG"] },
+      { slug: "8pm-place-des-vosges", title: "8PM", location: "Place des Vosges", main: "main.JPG", images: ["1.JPG", "2.JPG", "3.jpg"] },
+      { slug: "amelie-montmartre", title: "Amélie", location: "Montmartre", main: "main.JPG", images: ["1.JPG", "2.jpg", "3.jpg", "4.jpg", "5.JPG", "6.jpg"] },
       { slug: "bw-le-marais", title: "B&W", location: "Le Marais", images: ["1.jpg", "2.jpg", "3.jpg", "4.jpg"] },
-      { slug: "gaze-le-marais", title: "Gaze", location: "Le Marais", images: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"] },
+      { slug: "gaze-le-marais", title: "Gaze", location: "Le Marais", images: ["1.JPG", "2.JPG", "3.jpg", "4.jpg", "5.jpg", "6.JPG"] },
     ],
     beats: [
       {
@@ -393,7 +393,7 @@ window.PROJECTS = [
   },
   {
     slug: "dodo-jewels",
-    name: "DoDO Jewels",
+    name: "DoDo Jewels",
     labels: ["Creative Direction", "Campaign Development"],
     images: [
       "main.jpg",

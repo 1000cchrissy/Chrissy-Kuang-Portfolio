@@ -745,7 +745,7 @@ if (project && project.shoots) {
   project.shoots.forEach((shoot, index) => {
     const folder = shoot.slug || shoot.folder;
     const files = [
-      fileUrl(`${folder}/main.jpg`),
+      fileUrl(`${folder}/${shoot.main || "main.jpg"}`),
       ...shoot.images.map((file) => fileUrl(`${folder}/${file}`)),
     ];
     addPairs(files, `${shoot.title}, ${shoot.location}`, {
