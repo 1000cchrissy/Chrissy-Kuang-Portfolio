@@ -9,6 +9,7 @@ const EXTENSIONS = ["jpg", "jpeg", "png", "webp", "JPG", "JPEG", "PNG", "WEBP"];
 const stage = document.getElementById("about-stage");
 const reduceQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 const mobileQuery = window.matchMedia("(max-width: 768px)");
+let lastLayoutWidth = 0;
 
 function capabilityLabels() {
   const seen = [];
@@ -85,6 +86,7 @@ const slots = [0, 1, 2].map(() => {
     const img = document.createElement("img");
     img.className = "about-photo";
     img.alt = "";
+    if (mobileQuery.matches) img.decoding = "async";
     el.appendChild(img);
     return img;
   });
@@ -93,16 +95,21 @@ const slots = [0, 1, 2].map(() => {
 });
 stage.appendChild(group);
 
+function mobileSlotWidth() {
+  const view = document.documentElement.clientWidth;
+  return (view - view * 0.1 - 24) / 3;
+}
+
 function heightFor(batchIndex, slotIndex) {
   if (mobileQuery.matches) {
-    const width = slots[slotIndex].el.getBoundingClientRect().width;
-    return (width * MOBILE_RATIOS[batchIndex][slotIndex]) + "px";
+    return (mobileSlotWidth() * MOBILE_RATIOS[batchIndex][slotIndex]) + "px";
   }
   return BATCHES[batchIndex].heights[slotIndex] + "vw";
 }
 
 function applyHeights() {
   if (!mobileQuery.matches) {
+    slots.forEach((slot) => slot.el.style.removeProperty("width"));
     let max = 0;
     BATCHES.forEach((batch) => {
       batch.heights.forEach((height) => {
@@ -111,7 +118,10 @@ function applyHeights() {
     });
     document.documentElement.style.setProperty("--about-bar", max + "vw");
   } else {
-    const width = slots[0].el.getBoundingClientRect().width;
+    const width = mobileSlotWidth();
+    slots.forEach((slot) => {
+      slot.el.style.width = width + "px";
+    });
     let max = 0;
     MOBILE_RATIOS.forEach((ratios) => {
       ratios.forEach((ratio) => {
@@ -121,6 +131,7 @@ function applyHeights() {
     });
     document.documentElement.style.setProperty("--bar-h", (max + 12) + "px");
   }
+  lastLayoutWidth = mobileQuery.matches ? document.documentElement.clientWidth : window.innerWidth;
   slots.forEach((slot, slotIndex) => {
     if (slot.phase === "idle" && slot.batch >= 0) {
       slot.el.style.transition = "none";
@@ -292,7 +303,7 @@ Promise.all(slots.map((slot, slotIndex) => Promise.all(BATCHES.map(async (batch,
   if (!src) return;
   const img = slot.images[batchIndex];
   img.src = src;
-  if (img.decode) {
+  if (!mobileQuery.matches && img.decode) {
     try {
       await img.decode();
     } catch (error) {
@@ -312,10 +323,9 @@ Promise.all(slots.map((slot, slotIndex) => Promise.all(BATCHES.map(async (batch,
   }
 });
 
-let lastWidth = window.innerWidth;
 function onResize() {
-  if (mobileQuery.matches && window.innerWidth === lastWidth) return;
-  lastWidth = window.innerWidth;
+  const width = mobileQuery.matches ? document.documentElement.clientWidth : window.innerWidth;
+  if (Math.abs(width - lastLayoutWidth) < 2) return;
   applyHeights();
 }
 

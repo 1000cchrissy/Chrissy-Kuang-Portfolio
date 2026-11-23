@@ -236,6 +236,11 @@ body {
     --edge-m: 5vw;
   }
 
+  html {
+    scroll-behavior: auto;
+    overflow-x: clip;
+  }
+
   .nav {
     padding: 0 var(--edge-m);
   }
@@ -289,7 +294,8 @@ body {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    height: 100svh;
+    height: 100vh;
+    height: 100lvh;
     padding-top: var(--top-h, 0px);
     padding-bottom: var(--bar-h, 0px);
     scroll-snap-align: center;
@@ -348,6 +354,7 @@ body {
 
   .about-slot {
     width: calc((100vw - 10vw - 24px) / 3);
+    will-change: auto;
   }
 }
 

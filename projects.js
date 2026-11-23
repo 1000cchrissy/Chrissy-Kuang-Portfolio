@@ -448,7 +448,7 @@ window.PROJECTS = [
     name: "Novo Nordisk",
     labels: ["Creative Direction", "Campaign Development"],
     images: [
-      { pairs: ["main.jpg", "1.png"] },
+      { pairs: ["main.jpg", "1.jpg"] },
       { slideshow: ["2.jpg", "3.jpg"] },
       { video: "4.mp4", caption: "AI-generated video and images for concept presentation" },
     ],
