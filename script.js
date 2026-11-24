@@ -293,6 +293,15 @@ function setActive(index) {
   restartCycle();
 }
 
+function contextLine(project) {
+  const text = project.context && String(project.context).trim();
+  if (!text) return null;
+  const line = document.createElement("p");
+  line.className = "project-context";
+  line.textContent = text;
+  return line;
+}
+
 function renderMobile() {
   snap.replaceChildren();
   names.replaceChildren();
@@ -342,7 +351,10 @@ function renderMobile() {
     hint.setAttribute("aria-hidden", "true");
 
     row.append(name, number);
-    meta.append(row, labels);
+    meta.append(row);
+    const context = contextLine(project);
+    if (context) meta.append(context);
+    meta.append(labels);
     top.append(meta);
     link.append(top, photo, hint);
     section.appendChild(link);
@@ -396,6 +408,12 @@ function renderSlides(start) {
     name.className = "display-name";
     name.textContent = project.displayName || project.name;
 
+    const stack = document.createElement("div");
+    stack.className = "name-stack";
+    stack.appendChild(name);
+    const context = contextLine(project);
+    if (context) stack.appendChild(context);
+
     const stage = createStage(files.map((file) => fileUrl(project, file)));
     stage.stage.href = href;
     stage.stage.setAttribute("aria-label", project.displayName || project.name);
@@ -405,7 +423,7 @@ function renderSlides(start) {
     labels.className = "labels";
     labels.textContent = (project.labels || []).map((label) => `(${label})`).join(" ");
 
-    copy.append(name, stage.stage, labels);
+    copy.append(stack, stage.stage, labels);
 
     const cover = document.createElement("a");
     cover.className = "cover-link";

@@ -251,6 +251,22 @@ body {
   margin-top: 24px;
 }
 
+.beat-highlight {
+  display: -webkit-box;
+  margin: 0 0 24px;
+  overflow: hidden;
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+  font-size: calc(var(--nav-size) * 1.25);
+  font-weight: 700;
+  letter-spacing: var(--ls-small);
+  line-height: 1.2;
+  text-align: left;
+  text-transform: none;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .beat-block h2,
 .beat-block p,
 .beat-list,
@@ -319,6 +335,34 @@ body {
   letter-spacing: -0.09em;
   line-height: 0.8;
   text-transform: uppercase;
+}
+
+.project-heading {
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: 42vw;
+}
+
+.project-heading .project-name {
+  position: static;
+  max-width: none;
+}
+
+.project-context {
+  margin: 0;
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: var(--ls-small);
+  line-height: 1.15;
+  text-transform: none;
 }
 
 .page-links {
@@ -471,6 +515,10 @@ body {
   text-align: right;
 }
 
+.item-caption.is-regular {
+  font-weight: 400;
+}
+
 .frames > .has-caption:not(:last-child) {
   margin-bottom: calc(40px - 12px);
 }
@@ -568,6 +616,11 @@ body {
     width: 58%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .beat-highlight {
+    margin-bottom: 16px;
+    font-size: 15px;
   }
 
   .beat-block h2,
@@ -744,6 +797,15 @@ body {
     background: #f0f0ee;
   }
 
+  .project-heading {
+    position: static;
+    bottom: auto;
+    left: auto;
+    max-width: none;
+    min-width: 0;
+    gap: 6px;
+  }
+
   .project-name {
     position: static;
     min-width: 0;
@@ -815,6 +877,7 @@ body {
 }
 
 body.is-entering .project-name,
+body.is-entering .project-context,
 body.is-entering .block,
 body.is-entering .index-open,
 body.is-entering .back {
@@ -823,6 +886,7 @@ body.is-entering .back {
 }
 
 body.is-entering .project-name,
+body.is-entering .project-context,
 body.is-entering .block:nth-child(1) {
   animation-delay: 350ms;
 }
@@ -844,6 +908,7 @@ body.is-entering .index-open {
 }
 
 body.is-returning .project-name,
+body.is-returning .project-context,
 body.is-returning .block,
 body.is-returning .index-open,
 body.is-returning .back {
@@ -870,10 +935,12 @@ html.is-fade-out {
   }
 
   body.is-entering .project-name,
+  body.is-entering .project-context,
   body.is-entering .block,
   body.is-entering .index-open,
   body.is-entering .back,
   body.is-returning .project-name,
+  body.is-returning .project-context,
   body.is-returning .block,
   body.is-returning .index-open,
   body.is-returning .back {

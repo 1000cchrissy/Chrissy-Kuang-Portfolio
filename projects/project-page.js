@@ -133,6 +133,7 @@ function bindBeats(stack, countEl, mobileCount, prevBtn, nextBtn, total) {
   function keepWords() {
     const solid = mobileQuery.matches;
     stack.querySelectorAll("p, li").forEach((el) => {
+      if (el.classList.contains("beat-highlight")) return;
       if (!el.dataset.raw) el.dataset.raw = el.textContent;
       writeBeatText(el, el.dataset.raw, solid);
     });
@@ -271,6 +272,13 @@ function renderBeats(source) {
     const article = document.createElement("article");
     article.className = "beat";
     if (beatIndex === 0) article.classList.add("is-current");
+    const highlightText = beatIndex === 0 && source.highlight ? String(source.highlight).trim() : "";
+    if (highlightText) {
+      const highlight = document.createElement("p");
+      highlight.className = "beat-highlight";
+      highlight.textContent = highlightText;
+      article.appendChild(highlight);
+    }
     beat.blocks.forEach((block, blockIndex) => {
       const node = makeBeatBlock(block);
       node.style.setProperty("--beat-delay", `${80 + blockIndex * 70}ms`);
@@ -366,8 +374,17 @@ renderBeats(project);
 if (title && title.parentNode) {
   const head = document.createElement("div");
   head.className = "project-head";
+  const heading = document.createElement("div");
+  heading.className = "project-heading";
   title.parentNode.insertBefore(head, title);
-  head.appendChild(title);
+  heading.appendChild(title);
+  if (project && project.context && String(project.context).trim()) {
+    const context = document.createElement("p");
+    context.className = "project-context";
+    context.textContent = String(project.context).trim();
+    heading.appendChild(context);
+  }
+  head.appendChild(heading);
   if (slug) {
     const link = document.createElement("a");
     link.className = "page-back";
@@ -710,6 +727,9 @@ function addItemCaption(node, caption) {
   if (!caption) return node;
   const figcaption = document.createElement("figcaption");
   figcaption.className = "item-caption";
+  if (caption === "AI-generated video and images for concept presentation") {
+    figcaption.classList.add("is-regular");
+  }
   figcaption.textContent = caption;
   node.appendChild(figcaption);
   node.classList.add("has-caption");

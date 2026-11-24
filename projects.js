@@ -1,7 +1,317 @@
 window.PROJECTS = [
   {
+    slug: "biotherm-homme",
+    name: "Biotherm Homme",
+    context: "L'Oréal Luxe · International Marketing · 2025",
+    highlight: "2 global campaigns delivered across international markets",
+    labels: ["Creative Direction", "Campaign Development"],
+    images: [
+      { pairs: ["main.jpg", "1.jpg", "2.jpg", "3.jpg"] },
+      { file: "4.jpg", caption: "AI-generated video and images for concept presentation" },
+      "5.jpg",
+    ],
+    beats: [
+      {
+        blocks: [
+          {
+            label: "THE EXECUTION",
+            bullets: [
+              "From concept to global assets: Contributed to creative concepts and 360° campaign strategy, managing 2 agencies from creative briefing, shoots, and retouching to global asset delivery.",
+              "From brand vision to visual consistency: Oversaw creative assets across digital, e-retail, and offline touchpoints, ensuring alignment with brand identity and international market needs.",
+              "From market insights to creative decisions: Analyzed competitor campaigns, e-retail content, and consumer trends to inform creative direction and campaign development.",
+            ],
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE IMPACT",
+            bullets: [
+              "Supported the production and international delivery of assets for 2 global campaigns.",
+              "Developed a 360° campaign concept and supporting creative strategy, connecting brand storytelling across channels.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "dior-mirage",
+    name: "Dior Mirage",
+    context: "Parfums Christian Dior × HEC Paris · Winning concept · 2024",
+    highlight: "Winning concept, selected by Parfums Christian Dior",
+    labels: ["Creative Direction", "Campaign Development"],
+    images: [
+      "main.jpg",
+      { slideshow: ["1.jpg", "2.jpg"] },
+      { slideshow: ["3.jpg", "4.jpg"], caption: "AI-generated video and images for concept presentation" },
+    ],
+    beats: [
+      {
+        blocks: [
+          {
+            label: "THE CHALLENGE",
+            text: "Bridge Dior's Gen Z consumer gap by developing a new fragrance concept that resonates with a younger generation.",
+          },
+          {
+            label: "THE INSIGHT",
+            text: "Gen Z resists being defined by a single identity. They embrace their many sides and seek brands that celebrate self-expression in all its forms.",
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE IDEA",
+            text: "One fragrance, endless reflections. A light-reflecting bottle that transforms with every angle, paired with a customizable perfume and mist duo to match every mood and version of oneself.",
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE EXECUTION",
+            bullets: [
+              "Product Innovation: Developed the fragrance concept, packaging design, product formats, and pricing strategy.",
+              "Creative & Campaign Strategy: Built a 360° launch campaign spanning digital, influencer marketing, PR, and experiential activations.",
+              "Visual Storytelling: Translated the concept of fluid identity into campaign visuals, storytelling, and activation design.",
+            ],
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE IMPACT",
+            text: "Selected as the winning concept by the Parfums Christian Dior team following the final competition presentations.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "cartier-way-home",
+    name: "Cartier Way Home",
+    context: "Cartier × HEC Paris · Winning concept · 2025",
+    highlight: "Winning concept, selected by the Cartier team",
+    labels: ["Creative Direction", "Campaign Development"],
+    images: [
+      "main.jpg",
+      { slideshow: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"] },
+    ],
+    beats: [
+      {
+        blocks: [
+          {
+            label: "THE CHALLENGE",
+            text: "Revitalize Cartier's declining Home category through a 360° launch strategy for its new collection.",
+          },
+          {
+            label: "THE INSIGHT",
+            text: "Immersive experiences create deeper emotional connections with products, while meaningful memories and tangible keepsakes extend the brand experience beyond the moment.",
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE IDEA",
+            text: "The Train to Home. An immersive journey inspired by Cartier's heritage of travel, evoking the familiar objects, emotions, and memories that make a place feel like home.",
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE EXECUTION",
+            bullets: [
+              "Creative Strategy: Developed the activation concept, translating Cartier's travel heritage into an emotional brand narrative.",
+              "Experience Design: Designed the spatial layout, customer journey, and immersive touchpoints.",
+              "Content & Visual Direction: Created campaign assets and visual storytelling to connect the experience with the collection launch.",
+            ],
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE IMPACT",
+            text: "Selected as the winning concept by the Cartier team following the final project presentations.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "hay-taiwan",
+    name: "HAY Taiwan",
+    context: "HAY · Social Media & Campaigns · 2024",
+    highlight: "+23% Instagram growth and Vogue coverage",
+    labels: ["Social Media", "Campaign Development"],
+    cover: "assets/projects/hay-taiwan/main.jpg",
+    images: ["main.jpg", { pairs: ["1.jpg", "2.jpg"] }, { pairs: ["3.jpg", "4.jpg"] }, "5.mp4", "6.jpg"],
+    beats: [
+      {
+        blocks: [
+          {
+            label: "THE CHALLENGE",
+            text: "Strengthen HAY's social media presence in Taiwan while preserving the Danish design brand's distinctive visual identity.",
+          },
+          {
+            label: "THE INSIGHT",
+            text: "Local audiences connect more deeply with global brands when content reflects their everyday lifestyles, cultural references, and communities.",
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE IDEA",
+            text: "Reimagine HAY's new Barro collection through the lens of a traditional Taiwanese market, blending local cultural identity with the brand's playful, design-led aesthetic.",
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE EXECUTION",
+            bullets: [
+              "Social Media Strategy: Managed two Instagram accounts with distinct editorial directions: official brand storytelling and community-driven content.",
+              "Campaign Development: Developed two campaign concepts, creating visual assets and online/offline merchandising experiences.",
+              "Influencer & PR Activation: Coordinated HAY's first APAC conference and collaborations with 50 leading Asian influencers and media partners, including Vogue.",
+            ],
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE IMPACT",
+            bullets: [
+              "+23% Instagram follower growth, from 26.8K to 33K.",
+              "Secured Vogue coverage through influencer and media partnerships.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "hera-walking-tours",
+    name: "HERA Walking Tours",
+    context: "Freelance client · Brand & Content Strategy · 2026",
+    highlight: "+231% followers, fully organic",
+    pageTitle: ["HERA", "WALKING TOURS"],
+    labels: ["Brand Strategy", "Content Strategy", "Social Media"],
+    images: [
+      { pairs: ["main.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg"] },
+      { slideshow: ["5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg"] },
+      "10.jpg",
+      "11.jpg",
+      "12.jpg",
+    ],
+    beats: [
+      {
+        blocks: [
+          {
+            label: "THE CHALLENGE",
+            text: "A young walking tour brand with a distinctive women-centered positioning, but limited brand awareness and resources to grow its audience.",
+          },
+          {
+            label: "THE INSIGHT",
+            text: "People follow accounts for more than products or services. They seek valuable content, shared interests, and a sense of community, with genuine curiosity for untold women's stories.",
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE IDEA",
+            text: "Transform HERA from a walking tour service into a community-driven cultural platform, spotlighting women's history, local female creatives, businesses, and events, naturally leading audiences back to the tours.",
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE EXECUTION",
+            bullets: [
+              "Brand Strategy: Defined brand DNA, positioning, tone of voice, and visual direction.",
+              "Content Strategy: Built content pillars and editorial calendars connecting cultural storytelling, community discovery, and tour promotion.",
+              "Social Media Management: Led content creation, production, editing, publishing, and performance analysis to continuously refine the strategy.",
+            ],
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE IMPACT",
+            text: "+231% Instagram follower growth. 175 → 580+ followers, organically growing HERA's audience through cultural storytelling and community-led content.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "anam-skincare",
+    name: "ANAM Skincare",
+    context: "Freelance client · Brand Identity & Launch · 2026",
+    highlight: "From raw concept to launch-ready brand",
+    labels: ["Brand Strategy", "Content Strategy", "Creative Direction"],
+    images: [
+      "main.jpg",
+      { slideshow: ["1.jpg", "2.jpg", "3.jpg"] },
+      { slideshow: ["4.jpg", "5.jpg", "6.jpg"] },
+    ],
+    beats: [
+      {
+        blocks: [
+          {
+            label: "THE CHALLENGE",
+            text: "A founder with an anti-aging skincare oil concept and raw ingredients, but no defined brand identity or marketing strategy to bring it to life.",
+          },
+          {
+            label: "THE INSIGHT",
+            text: "As conscious consumption and slow living gain relevance, skincare is becoming more than a beauty routine. It's an intentional ritual of self-care and longevity.",
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE IDEA",
+            text: "Transform the founder's philosophy into a skincare brand that celebrates intentional living, positioning anti-aging as a holistic ritual rather than a fight against time.",
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE EXECUTION",
+            bullets: [
+              "Brand Strategy & Identity: Defined brand DNA, positioning, tone of voice, naming, visual identity, and packaging direction.",
+              "Content Strategy: Established brand aesthetics, content pillars, creative assets, and editorial planning for a cohesive launch.",
+            ],
+          },
+        ],
+      },
+      {
+        blocks: [
+          {
+            label: "THE OUTCOME",
+            text: "Translated an early-stage product concept into a cohesive brand identity and actionable content strategy, establishing the foundation for launch.",
+          },
+        ],
+      },
+    ],
+  },
+  {
     slug: "paris-photography",
     name: "Paris Photography",
+    context: "Own business · Founder & Photographer · 2026",
+    highlight: "30+ paying clients in 2 months, zero ad spend",
     displayName: "photography",
     labels: ["Creative Direction", "Social Media"],
     cover: "assets/projects/paris-photography/in-the-blue-montmartre/main.jpg",
@@ -63,63 +373,10 @@ window.PROJECTS = [
     ],
   },
   {
-    slug: "hera-walking-tours",
-    name: "HERA Walking Tours",
-    pageTitle: ["HERA", "WALKING TOURS"],
-    labels: ["Brand Strategy", "Content Strategy", "Social Media"],
-    images: [
-      { pairs: ["main.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg"] },
-      { slideshow: ["5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg"] },
-      "10.jpg",
-      "11.jpg",
-      "12.jpg",
-    ],
-    beats: [
-      {
-        blocks: [
-          {
-            label: "THE CHALLENGE",
-            text: "A young walking tour brand with a distinctive women-centered positioning, but limited brand awareness and resources to grow its audience.",
-          },
-          {
-            label: "THE INSIGHT",
-            text: "People follow accounts for more than products or services. They seek valuable content, shared interests, and a sense of community, with genuine curiosity for untold women's stories.",
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE IDEA",
-            text: "Transform HERA from a walking tour service into a community-driven cultural platform, spotlighting women's history, local female creatives, businesses, and events, naturally leading audiences back to the tours.",
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE EXECUTION",
-            bullets: [
-              "Brand Strategy: Defined brand DNA, positioning, tone of voice, and visual direction.",
-              "Content Strategy: Built content pillars and editorial calendars connecting cultural storytelling, community discovery, and tour promotion.",
-              "Social Media Management: Led content creation, production, editing, publishing, and performance analysis to continuously refine the strategy.",
-            ],
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE IMPACT",
-            text: "+231% Instagram follower growth. 175 → 580+ followers, organically growing HERA's audience through cultural storytelling and community-led content.",
-          },
-        ],
-      },
-    ],
-  },
-  {
     slug: "haley-kim",
     name: "Haley Kim",
+    context: "Freelance client · Beauty Creator Content Production · 2026",
+    highlight: "Content production for a 329K+ beauty creator",
     labels: ["Creative Direction", "Social Media"],
     images: [
       { pairs: ["main.jpg", "1.jpg", "2.jpg", "3.jpg"] },
@@ -151,249 +408,10 @@ window.PROJECTS = [
     ],
   },
   {
-    slug: "anam-skincare",
-    name: "ANAM Skincare",
-    labels: ["Brand Strategy", "Content Strategy", "Creative Direction"],
-    images: [
-      "main.jpg",
-      { slideshow: ["1.jpg", "2.jpg", "3.jpg"] },
-      { slideshow: ["4.jpg", "5.jpg", "6.jpg"] },
-    ],
-    beats: [
-      {
-        blocks: [
-          {
-            label: "THE CHALLENGE",
-            text: "A founder with an anti-aging skincare oil concept and raw ingredients, but no defined brand identity or marketing strategy to bring it to life.",
-          },
-          {
-            label: "THE INSIGHT",
-            text: "As conscious consumption and slow living gain relevance, skincare is becoming more than a beauty routine. It's an intentional ritual of self-care and longevity.",
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE IDEA",
-            text: "Transform the founder's philosophy into a skincare brand that celebrates intentional living, positioning anti-aging as a holistic ritual rather than a fight against time.",
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE EXECUTION",
-            bullets: [
-              "Brand Strategy & Identity: Defined brand DNA, positioning, tone of voice, naming, visual identity, and packaging direction.",
-              "Content Strategy: Established brand aesthetics, content pillars, creative assets, and editorial planning for a cohesive launch.",
-            ],
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE OUTCOME",
-            text: "Translated an early-stage product concept into a cohesive brand identity and actionable content strategy, establishing the foundation for launch.",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    slug: "biotherm-homme",
-    name: "Biotherm Homme",
-    labels: ["Creative Direction", "Campaign Development"],
-    images: [
-      { pairs: ["main.jpg", "1.jpg", "2.jpg", "3.jpg"] },
-      { file: "4.jpg", caption: "AI-generated video and images for concept presentation" },
-      "5.jpg",
-    ],
-    beats: [
-      {
-        blocks: [
-          {
-            label: "THE EXECUTION",
-            bullets: [
-              "From concept to global assets: Contributed to creative concepts and 360° campaign strategy, managing 2 agencies from creative briefing, shoots, and retouching to global asset delivery.",
-              "From brand vision to visual consistency: Oversaw creative assets across digital, e-retail, and offline touchpoints, ensuring alignment with brand identity and international market needs.",
-              "From market insights to creative decisions: Analyzed competitor campaigns, e-retail content, and consumer trends to inform creative direction and campaign development.",
-            ],
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE IMPACT",
-            bullets: [
-              "Supported the production and international delivery of assets for 2 global campaigns.",
-              "Developed a 360° campaign concept and supporting creative strategy, connecting brand storytelling across channels.",
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    slug: "hay-taiwan",
-    name: "HAY Taiwan",
-    labels: ["Social Media", "Campaign Development"],
-    cover: "assets/projects/hay-taiwan/main.jpg",
-    images: ["main.jpg", { pairs: ["1.jpg", "2.jpg"] }, { pairs: ["3.jpg", "4.jpg"] }, "5.mp4", "6.jpg"],
-    beats: [
-      {
-        blocks: [
-          {
-            label: "THE CHALLENGE",
-            text: "Strengthen HAY's social media presence in Taiwan while preserving the Danish design brand's distinctive visual identity.",
-          },
-          {
-            label: "THE INSIGHT",
-            text: "Local audiences connect more deeply with global brands when content reflects their everyday lifestyles, cultural references, and communities.",
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE IDEA",
-            text: "Reimagine HAY's new Barro collection through the lens of a traditional Taiwanese market, blending local cultural identity with the brand's playful, design-led aesthetic.",
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE EXECUTION",
-            bullets: [
-              "Social Media Strategy: Managed two Instagram accounts with distinct editorial directions: official brand storytelling and community-driven content.",
-              "Campaign Development: Developed two campaign concepts, creating visual assets and online/offline merchandising experiences.",
-              "Influencer & PR Activation: Coordinated HAY's first APAC conference and collaborations with 50 leading Asian influencers and media partners, including Vogue.",
-            ],
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE IMPACT",
-            bullets: [
-              "+23% Instagram follower growth, from 26.8K to 33K.",
-              "Secured Vogue coverage through influencer and media partnerships.",
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    slug: "dior-mirage",
-    name: "Dior Mirage",
-    labels: ["Creative Direction", "Campaign Development"],
-    images: [
-      "main.jpg",
-      { slideshow: ["1.jpg", "2.jpg"] },
-      { slideshow: ["3.jpg", "4.jpg"], caption: "AI-generated video and images for concept presentation" },
-    ],
-    beats: [
-      {
-        blocks: [
-          {
-            label: "THE CHALLENGE",
-            text: "Bridge Dior's Gen Z consumer gap by developing a new fragrance concept that resonates with a younger generation.",
-          },
-          {
-            label: "THE INSIGHT",
-            text: "Gen Z resists being defined by a single identity. They embrace their many sides and seek brands that celebrate self-expression in all its forms.",
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE IDEA",
-            text: "One fragrance, endless reflections. A light-reflecting bottle that transforms with every angle, paired with a customizable perfume and mist duo to match every mood and version of oneself.",
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE EXECUTION",
-            bullets: [
-              "Product Innovation: Developed the fragrance concept, packaging design, product formats, and pricing strategy.",
-              "Creative & Campaign Strategy: Built a 360° launch campaign spanning digital, influencer marketing, PR, and experiential activations.",
-              "Visual Storytelling: Translated the concept of fluid identity into campaign visuals, storytelling, and activation design.",
-            ],
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE IMPACT",
-            text: "Selected as the winning concept by the Parfums Christian Dior team following the final competition presentations.",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    slug: "cartier-way-home",
-    name: "Cartier Way Home",
-    labels: ["Creative Direction", "Campaign Development"],
-    images: [
-      "main.jpg",
-      { slideshow: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"] },
-    ],
-    beats: [
-      {
-        blocks: [
-          {
-            label: "THE CHALLENGE",
-            text: "Revitalize Cartier's declining Home category through a 360° launch strategy for its new collection.",
-          },
-          {
-            label: "THE INSIGHT",
-            text: "Immersive experiences create deeper emotional connections with products, while meaningful memories and tangible keepsakes extend the brand experience beyond the moment.",
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE IDEA",
-            text: "The Train to Home. An immersive journey inspired by Cartier's heritage of travel, evoking the familiar objects, emotions, and memories that make a place feel like home.",
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE EXECUTION",
-            bullets: [
-              "Creative Strategy: Developed the activation concept, translating Cartier's travel heritage into an emotional brand narrative.",
-              "Experience Design: Designed the spatial layout, customer journey, and immersive touchpoints.",
-              "Content & Visual Direction: Created campaign assets and visual storytelling to connect the experience with the collection launch.",
-            ],
-          },
-        ],
-      },
-      {
-        blocks: [
-          {
-            label: "THE IMPACT",
-            text: "Selected as the winning concept by the Cartier team following the final project presentations.",
-          },
-        ],
-      },
-    ],
-  },
-  {
     slug: "dodo-jewels",
     name: "DoDo Jewels",
+    context: "DoDo × HEC Paris · Top 4 concept · 2025",
+    highlight: "Top 4 of the competition",
     labels: ["Creative Direction", "Campaign Development"],
     images: [
       "main.jpg",
@@ -446,6 +464,8 @@ window.PROJECTS = [
   {
     slug: "novo-nordisk",
     name: "Novo Nordisk",
+    context: "Novo Nordisk x HEC Paris · Strategic Marketing Consultant · 2025",
+    highlight: "Pitched to Novo Nordisk's CEO and leadership team",
     labels: ["Creative Direction", "Campaign Development"],
     images: [
       { pairs: ["main.jpg", "1.jpg"] },
@@ -494,7 +514,7 @@ window.PROJECTS = [
         ],
       },
     ],
-  },
+  }
 ];
 
 window.projectCover = function (project) {

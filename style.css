@@ -105,6 +105,25 @@ body {
   transition: opacity 350ms ease;
 }
 
+.name-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-context {
+  margin: 0;
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: var(--ls-small);
+  line-height: 1.15;
+  text-align: center;
+  text-transform: none;
+}
+
 .stage {
   position: relative;
   display: block;
@@ -220,6 +239,7 @@ body.is-leaving .slide.is-active .stage {
 }
 
 body.is-leaving .slide.is-active .display-name,
+body.is-leaving .slide.is-active .project-context,
 body.is-leaving .slide.is-active .labels,
 body.is-leaving .mark,
 body.is-leaving .count {
@@ -235,6 +255,7 @@ body.is-arriving .slide.is-active .stage {
 }
 
 body.is-arriving .slide.is-active .display-name,
+body.is-arriving .slide.is-active .project-context,
 body.is-arriving .slide.is-active .labels,
 body.is-arriving .mark {
   animation: fade-in 350ms ease both;
@@ -384,6 +405,11 @@ body.is-arriving .count {
     transition: opacity 350ms ease;
   }
 
+  .project-context {
+    margin: 6px 0 0;
+    text-align: left;
+  }
+
   .stage,
   body.is-leaving .slide.is-active .stage {
     transform: none;
@@ -432,6 +458,7 @@ body.is-arriving .count {
 
   body.is-leaving .mobile-project-name,
   body.is-leaving .mobile-project-no,
+  body.is-leaving .project-context,
   body.is-leaving .mobile-labels {
     opacity: 0;
   }
@@ -451,6 +478,7 @@ html.is-fade-out {
   .count,
   .mark,
   .display-name,
+  .project-context,
   .labels,
   .stage,
   .stage > img,
@@ -466,6 +494,7 @@ html.is-fade-out {
 
   body.is-arriving .slide.is-active .stage,
   body.is-arriving .slide.is-active .display-name,
+  body.is-arriving .slide.is-active .project-context,
   body.is-arriving .slide.is-active .labels,
   body.is-arriving .mark,
   body.is-arriving .count {
