@@ -145,7 +145,7 @@ window.PROJECTS = [
   },
   {
     slug: "hay-taiwan",
-    name: "HAY Taiwan",
+    name: "HAY",
     context: "HAY · Social Media & Campaigns · 2024",
     highlight: "+23% Instagram growth and Vogue coverage",
     labels: ["Social Media", "Campaign Development"],
